@@ -5,7 +5,17 @@ Rivaan coded the *random forest* whilst Reyansh did the *convulsional neural net
 
 # Goal and what we want to acomplish from this project
 Our project intially was very different in terms of what we trying to do., we were planning on making models for different data sets. However Mr.Miyata suggested that instead we try to make multiple models for one dataset, then we make a comparision between the models to see which was better on the dataset. So we moved on from our previous idea where we were working on the MNIST data set (Reyansh and Joshua) aswell as the CKD (Rivaan) and began to focus on just the CKD (*Chronic Kidney Disease*). Since Josh didn't say for the remaining final week, Rivaan and Reyansh took on the task of making their own individual model for the dataset. Since Rivaan had already started on a *Random Forest* model for the dataset, Reyansh began to work on a *Convolusional Neural Network* for the dataset. Essnetially, our projects goal was to find the best model for the UCI *Chronic Kidney Disease* dataset.
-# Explaining the models - Random Forest
+### How it works
+The Random forest splits up the main dataset into random smaller pieces so each tree gets a slight different set of data to practice on. When the trees are growing, they only look at a random mix of features at each step. This keeps the trees different from each other so they do not all make the exact same mistakes.
+
+# Finding the answer
+* For picking categories (classification) every single tree in the forest votes on what they think the answer is. The model picks whichever choice got the most votes.
+* For figuring out numbers (regression) every tree guesses a number. The model just takes the average of all those numbers for the final answer
+
+### Why we chose random forest
+* It does not overfit as easily as a single decision tree since the average of a lot of trees cleans up the bad gueeses.
+* It tells you feature importance, which means it shows you which parts of your data actually mattered the most for the final guess.
+* It is easy to use on a normal data tables and you do not even have to spend a ton of time cleaning or scaling your numbers first.
 
 # Explaining the models - Convulsional  Neural Network
 
